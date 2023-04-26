@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ken's conversion table</title>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="index.js"></script>
+</head>
+<body>
+    <h1>Ken's Conversions</h1>
+    <form>
+        <fieldset>
+            <label for="dropdown">conversion options
+              <select id="dropdown" name="coding">
+                <option value="0">Please select an option</option>
+                <option value="1">ft to in</option>
+                <option value="2">ft to yards</option>
+                <option value="3">ft to meters</option>
+          </fieldset>
+        <label for="input">Type something here:</label>
+        <input type="text" id="input" name="input">
+        <button type="button" onclick="getResponse()">Submit</button>
+      </form>
+      <div id="output"></div>
+</body>
+
+</html>
