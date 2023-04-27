@@ -10,21 +10,32 @@
     <h1>Ken's Conversions</h1>
     <form>
         <fieldset>
-            <label for="dropdown">conversion options
-              <select id="dropdown" name="coding">
-                <option value="0">Please select an option</option>
-                <option value="1">ft to in</option>
-                <option value="2">ft to yards</option>
-                <option value="3">ft to meters</option>
+            <label for="fromUnit">current units
+              <select id="fromUnit" name="fromUnit" required>
+                <option value="" disabled selected class="disabled">Please select a unit</option>
+                <option value="cm" class="option">Centimeters</option>
+                <option value="in" class="option">Inches</option>
+                <option value="ft" class="option">Feet</option>
+                <option value="yd" class="option">Yards</option>
+                <option value="m" class="option">Meters</option>
+                <option value="mi" class="option">Miles</option>
+              </select>
+                <label for="toUnit">desired units</label>
+                <select id="toUnit" name="toUnit" required>
+                  <option value="" disabled selected class="disabled">Please select a unit</option>
+                  <option value="cm" class="option">Centimeters</option>
+                  <option value="in" class="option">Inches</option>
+                  <option value="ft" class="option">Feet</option>
+                  <option value="yd" class="option">Yards</option>
+                  <option value="m" class="option">Meters</option>
+                  <option value="mi" class="option">Miles</option>
+                </select>
           </fieldset>
-        <label for="input">Type something here:</label>
-        <input type="text" id="input" name="input">
+        <label for="input">Please type the number of current units in the input box below</label>
+        <input type="text" id="input" name="input" placeholder="Number of current units" required>
         <button type="button" onclick="getResponse()">Submit</button>
       </form>
       <div id="output"></div>
-      <div>
-        <h2>PPPPPPPPPPPPPPPPPP</h2>
-      </div>
 </body>
 
 </html>
